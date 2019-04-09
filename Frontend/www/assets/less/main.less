@@ -1,4 +1,4 @@
-@mainColor: blue;
+@mainColor: #FFBF00;
 
 @import "pizza/pizza-card";
 
@@ -6,12 +6,26 @@ html, body {
   height: 100%;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 #cart {
   height: 100%;
   background-color: orange;
+  z-index: 9999;
+  position: fixed;
+  right: 0;
 }
 
 .menu-row {
   color: darkgray;
   border-bottom: darkgray solid 1px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }

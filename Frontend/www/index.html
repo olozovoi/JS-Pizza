@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- LESS основний файл -->
-    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less"/>
     <!-- LESS JavaScript компілятор -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 
     <!-- jQuery JavaScript -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <!--Bootsrap JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -26,9 +26,10 @@
 <div class="container-fluid h-100 p-0">
     <div class="row no-gutters h-100">
         <div class="col-9">
-            <nav class="navbar navbar-dark bg-dark row">
+            <div class="col-12">
+            <nav class="navbar navbar-dark bg-dark row sticky-top">
                 <a class="col-1 navbar-brand" href="index.html">
-                    KMA<br />Pizza
+                    KMA<br/>Pizza
                 </a>
 
                 <div class="col-10">
@@ -49,70 +50,143 @@
                         </ul>
                     </div>
                 </div>
-
-                <!--<ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Піца</a>
-                    </li>
-                </ul>-->
-
-<!--                <button class="btn btn-outline-warning">Увійти</button>-->
             </nav>
 
+            <h2 class="text-center mt-2">Усі піци</h2>
+
+            <div class="row p-4" id="pizza_list">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="thumbnail pizza-card border rounded">
+                        <img src="assets/images/pizza_1.jpg" alt="pizza">
+
+                        <div class="caption"><h3>Thumbnail label</h3>
+
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                            <div class="row">
+                                <div class="col-6 pizza-info">
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/size-icon.svg" alt="Size:"/>
+                                        <span>30</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
+                                        <span>450</span>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <div class="btn btn-warning">Купити</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/size-icon.svg" alt="Size:"/>
+                                        <span>45</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
+                                        <span>850</span>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <div class="btn btn-warning">Купити</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="thumbnail pizza-card border rounded">
+                        <img src="assets/images/pizza_2.jpg" alt="pizza">
+
+                        <div class="caption"><h3>Thumbnail label</h3>
+
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                            <div class="row">
+                                <div class="col-6 pizza-info">
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/size-icon.svg" alt="Size:"/>
+                                        <span>30</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
+                                        <span>450</span>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <div class="btn btn-warning">Купити</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/size-icon.svg" alt="Size:"/>
+                                        <span>45</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
+                                        <span>850</span>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <div class="btn btn-warning">Купити</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="thumbnail pizza-card border rounded">
+                        <img src="assets/images/pizza_3.jpg" alt="pizza">
+
+                        <div class="caption"><h3>Thumbnail label</h3>
+
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                            <div class="row">
+                                <div class="col-6 pizza-info">
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/size-icon.svg" alt="Size:"/>
+                                        <span>30</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
+                                        <span>450</span>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <div class="btn btn-warning">Купити</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/size-icon.svg" alt="Size:"/>
+                                        <span>45</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
+                                        <span>850</span>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <div class="btn btn-warning">Купити</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="footer text-center col-9 bg-dark text-light">
+                Pizza-2.2 &copy; Oleksii Lozovoi 2019
+            </div>
         </div>
-        <div id="cart" class="col-3 p-2">cart</div>
+        <div id="cart" class="col-3 p-2 shadow-lg">cart</div>
     </div>
 </div>
-<!--<div class="container">
-    <div class="row" id="pizza_list">
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail pizza-card">
-                <img src="assets/images/pizza_1.jpg" alt="pizza">
 
-                <div class="caption"><h3>Thumbnail label</h3>
 
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-primary">Button 2</a>
-                        <a href="#" class="btn btn-default">Button 1</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail pizza-card">
-                <img src="assets/images/pizza_2.jpg">
-
-                <div class="caption"><h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-primary">Button 3</a>
-                        <a href="#" class="btn btn-default">Button 4</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail pizza-card">
-                <img src="assets/images/pizza_3.jpg">
-
-                <div class="caption"><h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-primary">Button 5</a>
-                        <a href="#" class="btn btn-default">Button 6</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
 </body>
 </html>
