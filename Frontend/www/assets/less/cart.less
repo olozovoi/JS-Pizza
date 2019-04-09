@@ -1,0 +1,82 @@
+#cart {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  -webkit-box-shadow: -3px 0px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: -3px 0px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: -3px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+@cart-header-footer-colors: #f0f0f0;
+
+#cart-header {
+  height: 10%;
+  background-color: @cart-header-footer-colors;
+  border-bottom: 1px solid #ddd;
+
+  .btn {
+    font-size: 10px;
+  }
+}
+
+#cart-body {
+  height: 80%;
+
+  .card {
+    min-height: 100px;
+    margin-top: 1px;
+    padding: 10px;
+
+    .card-title {
+      color: @mainColor;
+      margin-bottom: 3px;
+    }
+
+    .card-info {
+      font-size: 12px;
+      margin: 5px 0 10px 10px;
+      span {
+        margin-left: 5px;
+      }
+    }
+
+    .card-buttons {
+      span {
+        font-weight: bolder;
+        margin: 0 3px;
+      }
+      .btn {
+        font-size: 15px;
+      }
+    }
+
+    .mini-pizza {
+      width: 95px;
+      height: 95px;
+      position: fixed;
+      right: -30px;
+    }
+  }
+
+}
+
+#cart-footer {
+  height: 10%;
+  background-color: @cart-header-footer-colors;
+  border-top: 1px solid #ddd;
+
+  .sum {
+    padding: 5px;
+    font-size: 20px;
+
+    .sum-number {
+      display: block;
+      float: right;
+    }
+  }
+  .btn {
+    display: block;
+    width: 95%;
+    margin: auto;
+  }
+}

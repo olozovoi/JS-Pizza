@@ -74,7 +74,11 @@
                                         <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
                                         <span>450</span>
                                     </div>
-                                    <div class="text-center mt-3">
+                                    <div class="text-center price">
+                                        <div class="money">119</div>
+                                        <div>грн.</div>
+                                    </div>
+                                    <div class="text-center mt-2">
                                         <div class="btn btn-warning">Купити</div>
                                     </div>
                                 </div>
@@ -87,7 +91,11 @@
                                         <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
                                         <span>850</span>
                                     </div>
-                                    <div class="text-center mt-3">
+                                    <div class="text-center price">
+                                        <div class="money">215</div>
+                                        <div>грн.</div>
+                                    </div>
+                                    <div class="text-center mt-2">
                                         <div class="btn btn-warning">Купити</div>
                                     </div>
                                 </div>
@@ -96,7 +104,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4">
+                <!--<div class="col-12 col-sm-6 col-md-4">
                     <div class="thumbnail pizza-card border rounded">
                         <img src="assets/images/pizza_2.jpg" alt="pizza">
 
@@ -121,11 +129,11 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="text-center">
-                                        <img class="pizza-icon" src="assets/images/size-icon.svg" alt="Size:"/>
+                                        <img src="assets/images/size-icon.svg" alt="Size:"/>
                                         <span>45</span>
                                     </div>
                                     <div class="text-center">
-                                        <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
+                                        <img src="assets/images/weight.svg" alt="Weight:"/>
                                         <span>850</span>
                                     </div>
                                     <div class="text-center mt-3">
@@ -135,9 +143,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
-                <div class="col-12 col-sm-6 col-md-4">
+                <!--<div class="col-12 col-sm-6 col-md-4">
                     <div class="thumbnail pizza-card border rounded">
                         <img src="assets/images/pizza_3.jpg" alt="pizza">
 
@@ -149,11 +157,11 @@
                             <div class="row">
                                 <div class="col-6 pizza-info">
                                     <div class="text-center">
-                                        <img class="pizza-icon" src="assets/images/size-icon.svg" alt="Size:"/>
+                                        <img src="assets/images/size-icon.svg" alt="Size:"/>
                                         <span>30</span>
                                     </div>
                                     <div class="text-center">
-                                        <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
+                                        <img src="assets/images/weight.svg" alt="Weight:"/>
                                         <span>450</span>
                                     </div>
                                     <div class="text-center mt-3">
@@ -162,11 +170,11 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="text-center">
-                                        <img class="pizza-icon" src="assets/images/size-icon.svg" alt="Size:"/>
+                                        <img src="assets/images/size-icon.svg" alt="Size:"/>
                                         <span>45</span>
                                     </div>
                                     <div class="text-center">
-                                        <img class="pizza-icon" src="assets/images/weight.svg" alt="Weight:"/>
+                                        <img src="assets/images/weight.svg" alt="Weight:"/>
                                         <span>850</span>
                                     </div>
                                     <div class="text-center mt-3">
@@ -176,14 +184,43 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
             </div>
             <div class="footer text-center col-9 bg-dark text-light">
                 Pizza-2.2 &copy; Oleksii Lozovoi 2019
             </div>
         </div>
-        <div id="cart" class="col-3 p-2 shadow-lg">cart</div>
+        <div id="cart" class="col-3">
+            <div id="cart-header" class="row no-gutters">
+                <h5 class="col-6 my-auto pl-3">Замовлення <span class="badge badge-warning">0</span></h5>
+                <div class="col-6 btn my-auto text-muted text-right pr-2">Очистити замовлення</div>
+            </div>
+            <div id="cart-body">
+                <div class="card">
+                    <h5 class="card-title">Thumbnail label</h5>
+                    <div class="card-info">
+                        <span><img src="assets/images/size-icon.svg" alt="Size:"/> 30</span>
+                        <span><img src="assets/images/weight.svg" alt="Weight:"/> 450</span>
+                    </div>
+                    <div class="card-buttons">
+                        <span>119 грн</span>
+                        <div class="minus btn badge badge-danger">&minus;</div>
+                        <span>1</span>
+                        <div class="plus btn badge badge-success">&plus;</div>
+                        <div class="remove btn btn-outline-warning badge ml-4">&cross;</div>
+                    </div>
+                    <img class="mini-pizza" src="assets/images/pizza_1.jpg" />
+                </div>
+            </div>
+            <div id="cart-footer" class="">
+                <div class="sum">
+                    <span class="sum-title">Сума замовлення</span>
+                    <span class="sum-number">119 грн</span>
+                </div>
+                <div class="btn btn-warning">Замовити</div>
+            </div>
+        </div>
     </div>
 </div>
 
