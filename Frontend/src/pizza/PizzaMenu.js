@@ -31,6 +31,13 @@ function showPizzaList(list) {
     list.forEach(showOnePizza);
 }
 
+let Filter = {
+    meat: "meat",
+    pineapple: "pineapple",
+    mushroom: "mushroom",
+    ocean: "ocean"
+};
+
 function filterPizza(filter) {
     //Масив куди потраплять піци які треба показати
     var pizza_shown = [];
@@ -40,15 +47,38 @@ function filterPizza(filter) {
         //pizza_shown.push(pizza);
 
         //TODO: зробити фільтри
+        if(pizza.content[filter]) {
+            pizza_shown.push(pizza);
+        }
     });
-
+    console.log(pizza_shown);
     //Показати відфільтровані піци
     showPizzaList(pizza_shown);
 }
 
 function initialiseMenu() {
+    $('#all').click(function () {
+        showPizzaList(Pizza_List);
+    });
+
+    $('#meat').click(function () {
+        filterPizza(Filter.meat);
+    });
+
+    $('#pineapple').click(function () {
+        filterPizza(Filter.pineapple);
+    });
+
+    $('#mushroom').click(function () {
+        filterPizza(Filter.mushroom);
+    });
+
+    $('#ocean').click(function () {
+        filterPizza(Filter.ocean);
+    });
+
     //Показуємо усі піци
-    showPizzaList(Pizza_List)
+    showPizzaList(Pizza_List);
 }
 
 exports.filterPizza = filterPizza;
