@@ -1,0 +1,25 @@
+</div>
+<div class="footer text-center col-9 bg-dark text-light">
+    Pizza-2.2 &copy; Oleksii Lozovoi 2019
+</div>
+</div>
+<div id="cart" class="col-3">
+    <div id="cart-header" class="row no-gutters">
+        <h5 class="col-6 my-auto pl-3">Замовлення <span class="pizza-count badge badge-warning">0</span></h5>
+        <%if (preorder) { %><div class="col-6 btn my-auto text-muted text-right pr-2 clear-cart">Очистити замовлення</div><% } %>
+    </div>
+    <div id="cart-body"></div>
+    <div id="cart-footer" class="">
+        <div class="sum">
+            <span class="sum-title">Сума замовлення</span>
+            <span class="sum-number">119 грн</span>
+        </div>
+        <a id="preorder" class="btn btn-warning" href="<% if (preorder) { %>/order<% } else { %>/<% } %>">
+            <%= orderButton %>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

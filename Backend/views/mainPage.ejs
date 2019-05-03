@@ -1,0 +1,24 @@
+<% include common/header.ejs %>
+
+
+<div class="btn-group btn-group-toggle m-1" data-toggle="buttons">
+    <label id="all" class="btn btn-secondary btn-warning active">
+        <input type="radio" name="options" autocomplete="off" checked>Усі піци
+    </label>
+    <label id="meat" class="btn btn-secondary btn-warning">
+        <input type="radio" name="options" autocomplete="off">М'ясні
+    </label>
+    <label id="pineapple" class="btn btn-secondary btn-warning">
+        <input type="radio" name="options" autocomplete="off">Ананаси
+    </label>
+    <label id="mushroom" class="btn btn-secondary btn-warning">
+        <input type="radio" name="options" autocomplete="off">Гриби
+    </label>
+    <label id="ocean" class="btn btn-secondary btn-warning">
+        <input type="radio" name="options" autocomplete="off">Морепродукти
+    </label>
+</div>
+
+<div class="row p-1" id="pizza_list"></div>
+
+<% include common/footer.ejs %>

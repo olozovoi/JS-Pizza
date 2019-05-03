@@ -1,0 +1,26 @@
+<% include common/header.ejs %>
+
+<div class="p-1">
+    <h4>Оформлення замовлення</h4>
+    <form id="order-form" class="col-4">
+        <div class="form-group">
+            <label>Ім'я</label>
+            <input type="text" class="form-control" placeholder="Ім'я" name="name" required>
+        </div>
+        <div class="form-group">
+            <label>Номер телефону</label>
+            <input type="tel" class="form-control" placeholder="Номер телефону" name="number" required>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label">Передзвонити мені</label>
+        </div>
+        <div class="form-group">
+            <label>Адреса</label>
+            <input type="text" class="form-control" placeholder="Адреса" name="address" required>
+        </div>
+        <button id="order" type="submit" class="btn btn-warning">Замовити</button>
+    </form>
+</div>
+
+<% include common/footer.ejs %>

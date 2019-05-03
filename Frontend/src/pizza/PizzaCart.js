@@ -44,7 +44,6 @@ function removeFromCart(cart_item) {
     for (let index = 0; index < Cart.length; index++) {
         if (Cart[index] === cart_item) {
             Cart.splice(index, 1);
-            quantity -= 1;
             break;
         }
     }
