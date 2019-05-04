@@ -2,7 +2,7 @@
 
 <div class="p-1">
     <h4>Оформлення замовлення</h4>
-    <form id="order-form" class="col-4">
+    <form id="order-form" class="col-6">
         <div class="form-group">
             <label>Ім'я</label>
             <input type="text" class="form-control" placeholder="Ім'я" name="name" required>
@@ -19,8 +19,11 @@
             <label>Адреса</label>
             <input type="text" class="form-control" placeholder="Адреса" name="address" required>
         </div>
+        <div id="googleMap" class="form-group" style="height: 300px"></div>
         <button id="order" type="submit" class="btn btn-warning">Замовити</button>
     </form>
 </div>
 
+<script	type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBu8EfHXfhweZE-W19Uo2d_UIFrmKvOeMo"></script>
+<script src="assets/js/map.js"></script>
 <% include common/footer.ejs %>
